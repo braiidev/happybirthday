@@ -6,7 +6,7 @@
 
 [ClickMe](https://braiidev.github.io/happybirthday)
 
-`https://braiidev.github.io/happybirthday/#NOMBRE`
+`https://braiidev.github.io/happybirthday/?name={NAME}&years={YEARS}`
 
 #### 🤦 En caso que te hayas olvidado de su nombre solo compartile el link y se lo cargaré en su saludo 🤡
 

@@ -1,6 +1,11 @@
-let birthName = window.location.hash.replace("#","")
+const birth = new URLSearchParams(window.location.search)
+let birthName = birth.get("name")
+let birthYear = parseInt(birth.get("years"))
 if(!birthName){
     birthName = prompt("Escribe tu nombre:")
+}
+if(!birthYear){
+    birthYear = prompt("Tu edad:")
 }
 const colors = [
     "#FF0000",
@@ -55,7 +60,7 @@ canvas.height = window.innerHeight
 //-------------------------------------------------------------
 class Explosion{
     constructor(x,y,color,size){
-        this.F = (n=5) => Math.random()*n
+        this.F = (n=7) => Math.random()*n
         this.x = x;
         this.y = canvas.height 
         this.color = color;
@@ -154,17 +159,20 @@ song.currentTime=0
 
 //-------------------------------------------------------------
 const explosions = MakeExplosion(150)
-const board = new WriteName("Feliz Cumpleaños","#fff","#000",7,40,0)
-const salutation = new WriteName(birthName,"#f00","#222",18, 60)
+const board = new WriteName("Feliz Cumpleaños","#fff","#000",7,20,0)
+const salutation = new WriteName(birthName,"#f00","#222",18, 50)
+const nmb = new WriteName(birthYear,"#fff","#000",12,70,0)
 
 function Animate(){
     ctx.clearRect(0,0,canvas.width,canvas.height)
     explosions.forEach(ex => ex.draw()) 
     board.draw()
     salutation.draw()
+    nmb.draw()
     requestAnimationFrame(Animate)
     song.play()
 }
 Animate()
 
-
+const Ballons = `<div class="ballon"><span></span><span></span><span></span></div>`
+document.body.append(Ballons)
