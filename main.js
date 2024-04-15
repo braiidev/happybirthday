@@ -130,7 +130,7 @@ class WriteName{
         const centerx = canvas.width/2
         ctx.beginPath()
         ctx.fillStyle = this.color
-        ctx.font = `${this.size}em Wendy One, sans-serif`
+        ctx.font = `${this.size}vw Wendy One, sans-serif`
         ctx.textAlign = "center"
         ctx.fillText(this.name, centerx, this.y)
         if(this.stroke){
@@ -154,8 +154,8 @@ song.currentTime=0
 
 //-------------------------------------------------------------
 const explosions = MakeExplosion(150)
-const board = new WriteName("Feliz Cumpleaños","#fff","#000",5,40,0)
-const salutation = new WriteName(birthName,"#f00","#222",8, 60)
+const board = new WriteName("Feliz Cumpleaños","#fff","#000",6,40,0)
+const salutation = new WriteName(birthName,"#f00","#222",10, 60)
 
 function Animate(){
     ctx.clearRect(0,0,canvas.width,canvas.height)
