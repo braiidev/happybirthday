@@ -154,7 +154,7 @@ song.currentTime=0
 
 //-------------------------------------------------------------
 const explosions = MakeExplosion(150)
-const board = new WriteName("Feliz Cumpleaños","#fff","#000",6,40,0)
+const board = new WriteName("Feliz Cumpleaños","#fff","#000",4,40,0)
 const salutation = new WriteName(birthName,"#f00","#222",10, 60)
 
 function Animate(){
