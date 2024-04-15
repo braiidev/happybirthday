@@ -154,8 +154,8 @@ song.currentTime=0
 
 //-------------------------------------------------------------
 const explosions = MakeExplosion(150)
-const board = new WriteName("Feliz Cumpleaños","#fff","#000",4,40,0)
-const salutation = new WriteName(birthName,"#f00","#222",10, 60)
+const board = new WriteName("Feliz Cumpleaños","#fff","#000",7,40,0)
+const salutation = new WriteName(birthName,"#f00","#222",18, 60)
 
 function Animate(){
     ctx.clearRect(0,0,canvas.width,canvas.height)
