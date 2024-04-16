@@ -2,7 +2,7 @@
 
 ## 🤝 Felicitá a tu ser querido 🤝
 
-#### 🔗 Compartile este link con su nombre en luego del hashtag 🔗
+#### 🔗 Compartile este link con su nombre y edad 🔗
 
 [ClickMe](https://braiidev.github.io/happybirthday)
 
